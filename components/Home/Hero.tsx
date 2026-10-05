@@ -1,0 +1,168 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, ShieldCheck, Terminal, Compass, Layers, PlayCircle } from "lucide-react";
+import Container from "@/components/ui/Container";
+import Button from "@/components/ui/Button";
+
+export default function Hero() {
+  return (
+    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 bg-tech-mesh border-b border-slate-200 overflow-hidden">
+      <Container size="xl">
+        {/* Asymmetrical 7 / 5 Layout with high-contrast editorial hierarchy */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+          {/* Left Column: 7 Cols */}
+          <div className="lg:col-span-7 flex flex-col items-start">
+            {/* High-visibility eyebrow badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-mono font-bold text-[#1D63ED] uppercase tracking-wider mb-6 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#1D63ED] animate-pulse" />
+              ORACLE FUSION FINANCIALS • CAREER-LED EDUCATION
+            </div>
+
+            {/* Powerful headline with intentional weight pairings */}
+            <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-black text-[#0A192F] tracking-tight leading-[1.08]">
+              Build Real Oracle Fusion Skills.{" "}
+              <span className="text-[#1D63ED] font-extrabold block mt-1">
+                Move Forward With Confidence.
+              </span>
+            </h1>
+
+            {/* Clear, readable subtitle with strong contrast */}
+            <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
+              Master Oracle Fusion Cloud Financials through actual business workflows, guided configuration labs, and consultant interview preparation. Clear, structured, and free of sales gimmicks.
+            </p>
+
+            {/* High-converting CTAs */}
+            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
+              <Button
+                href="/training"
+                size="lg"
+                variant="primary"
+                icon={<ArrowRight className="w-4 h-4" />}
+              >
+                Explore Training Program
+              </Button>
+              <Button
+                href="/book-demo"
+                size="lg"
+                variant="outline"
+                icon={<PlayCircle className="w-4 h-4 text-[#1D63ED]" />}
+              >
+                Book a Free Consultation
+              </Button>
+            </div>
+
+            {/* Trust checkmarks with high-contrast text */}
+            <div className="mt-12 pt-8 border-t border-slate-300 w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-semibold text-slate-800">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
+                <span>Live Cloud Labs</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
+                <span>P2P, O2C & R2R Flows</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
+                <span>15+ Yrs Mentors</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
+                <span>ATS Resume & Mocks</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: 5 Cols - Deep Architectural Mockup */}
+          <div className="lg:col-span-5 relative">
+            <div className="bg-white rounded-2xl border-2 border-slate-300 shadow-elevation-2 p-6 sm:p-7 relative z-10">
+              {/* Terminal Window Header */}
+              <div className="flex items-center justify-between border-b border-slate-200 pb-3 mb-5 text-xs text-slate-500 font-mono">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-3 h-3 rounded-full bg-rose-400" />
+                  <span className="w-3 h-3 rounded-full bg-amber-400" />
+                  <span className="w-3 h-3 rounded-full bg-emerald-400" />
+                  <span className="ml-2 font-bold text-slate-700">pod-fusion.cloud.oracle.com</span>
+                </div>
+                <span className="text-[11px] text-[#059669] bg-[#E9F8F1] px-2.5 py-0.5 rounded-full font-bold">
+                  CONNECTED
+                </span>
+              </div>
+
+              {/* Workspace Snapshot Header */}
+              <div className="bg-gradient-to-br from-[#0A192F] to-[#112240] text-white p-5 rounded-xl mb-4 shadow-md border border-slate-800">
+                <div className="flex justify-between items-center text-[11px] font-mono text-slate-300 mb-1">
+                  <span>ENTERPRISE STRUCTURE</span>
+                  <span className="text-blue-300 font-bold">GL-PRIMARY-01</span>
+                </div>
+                <div className="text-lg font-bold tracking-tight">
+                  Global Financials Architecture
+                </div>
+                <div className="mt-3 text-xs flex justify-between border-t border-slate-700/80 pt-2.5 text-slate-300 font-mono">
+                  <span>Chart of Accounts: 8 Segments</span>
+                  <span className="text-[#059669] font-bold flex items-center gap-1">
+                    <ShieldCheck className="w-3.5 h-3.5" /> Period Open
+                  </span>
+                </div>
+              </div>
+
+              {/* Structured Module Interconnections */}
+              <div className="space-y-2.5 text-xs">
+                <div className="p-3 rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-between hover:border-blue-400 transition-colors">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#1D63ED]" />
+                    <span className="font-bold text-[#0A192F]">General Ledger</span>
+                  </div>
+                  <span className="font-mono text-[11px] text-slate-600 font-medium">Primary / Secondary</span>
+                </div>
+
+                <div className="p-3 rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-between hover:border-blue-400 transition-colors">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#1D63ED]" />
+                    <span className="font-bold text-[#0A192F]">Accounts Payable & Tax</span>
+                  </div>
+                  <span className="font-mono text-[11px] text-slate-600 font-medium">3-Way PO Match Engine</span>
+                </div>
+
+                <div className="p-3 rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-between hover:border-blue-400 transition-colors">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#1D63ED]" />
+                    <span className="font-bold text-[#0A192F]">Accounts Receivable & Cash</span>
+                  </div>
+                  <span className="font-mono text-[11px] text-slate-600 font-medium">AutoInvoice & BAI2 Match</span>
+                </div>
+
+                <div className="p-3 rounded-lg border border-slate-200 bg-slate-50 flex items-center justify-between hover:border-blue-400 transition-colors">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#1D63ED]" />
+                    <span className="font-bold text-[#0A192F]">Fixed Assets & Expenses</span>
+                  </div>
+                  <span className="font-mono text-[11px] text-slate-600 font-medium">Subledger Accounting (SLA)</span>
+                </div>
+              </div>
+
+              {/* Progress Connection Strip */}
+              <div className="mt-4 pt-3.5 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600 font-mono">
+                <span className="flex items-center gap-1.5 text-slate-800 font-bold">
+                  <Compass className="w-4 h-4 text-[#1D63ED]" />
+                  Learn → Practice → Apply → Prepare
+                </span>
+                <span className="text-[#1D63ED] font-bold">v24.D SaaS</span>
+              </div>
+            </div>
+
+            {/* Overlapping High-Contrast Badge */}
+            <div className="hidden sm:flex items-center gap-3 absolute -bottom-5 -left-5 bg-[#0A192F] text-white p-4 rounded-xl border border-slate-700 shadow-xl z-20">
+              <Terminal className="w-5 h-5 text-blue-400 shrink-0" />
+              <div className="text-xs">
+                <div className="font-bold text-white">Authentic Cloud Environments</div>
+                <div className="text-[11px] text-slate-300">Direct hands-on configuration</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}

@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-navy: #0A192F;
+    --navy-surface: #112240;
+    --enterprise-blue: #1D63ED;
+    --blue-dark: #124BC2;
+    --blue-vibrant: #2563EB;
+    --warm-dark: #0A0F1D;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --border-subtle: #E2E8F0;
+    --border-medium: #CBD5E1;
+    --border-strong: #94A3B8;
+    --bg-page: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #F1F5F9;
+    --success-accent: #059669;
+  }
+
+  * {
+    border-color: #E2E8F0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Rich, high-contrast architectural technical background textures */
+.bg-tech-mesh {
+  background-color: #F8FAFC;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(29, 99, 237, 0.07) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(10, 25, 47, 0.05) 0px, transparent 50%),
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+.bg-blueprint-dark {
+  background-color: #0A192F;
+  background-image: 
+    radial-gradient(at 100% 0%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* Professional dimensional shadows with visible depth */
+.shadow-clean {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05), 0 0 0 1px rgba(15, 23, 42, 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 14px 28px -6px rgba(15, 23, 42, 0.12), 0 6px 12px -4px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(29, 99, 237, 0.2);
+}
+
+.shadow-elevation-1 {
+  box-shadow: 0 10px 25px -5px rgba(10, 25, 47, 0.10), 0 8px 10px -6px rgba(10, 25, 47, 0.06);
+}
+
+.shadow-elevation-2 {
+  box-shadow: 0 20px 40px -12px rgba(10, 25, 47, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 20px -3px rgba(29, 99, 237, 0.35);
+}
+
+/* Focus states */
+*:focus-visible {
+  outline: 2px solid #1D63ED;
+  outline-offset: 2px;
+}
