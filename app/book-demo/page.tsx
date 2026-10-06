@@ -51,12 +51,22 @@ export default function BookDemoPage() {
               <h2 className="text-2xl font-black text-[#0A192F]">
                 Consultation Request Received!
               </h2>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Thank you. We have received your schedule request. An advisor will reach out via WhatsApp or email within a few hours to confirm the exact time slot that works best for you.
+              <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto">
+                Thank you! Your details have been formatted and directed to our WhatsApp admissions desk (+91 92479 54331). We look forward to connecting with you.
               </p>
-              <Button href="/" variant="primary" className="mt-4">
-                Return to Homepage
-              </Button>
+              <div className="pt-2 flex flex-col sm:flex-row justify-center gap-3">
+                <a
+                  href="https://wa.me/919247954331"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#059669] text-white font-bold text-sm shadow-sm hover:bg-[#047857] transition-colors"
+                >
+                  Open WhatsApp Chat
+                </a>
+                <Button href="/" variant="outline">
+                  Return to Homepage
+                </Button>
+              </div>
             </div>
           ) : (
             <Formik
@@ -71,11 +81,29 @@ export default function BookDemoPage() {
               }}
               validationSchema={DemoSchema}
               onSubmit={(values, { setSubmitting }) => {
-                console.log("Book Demo submission:", values);
-                setTimeout(() => {
-                  setSubmitting(false);
-                  setIsBooked(true);
-                }, 500);
+                const message = [
+                  `*New Demo & Consultation Request - FusionERPTraining*`,
+                  ``,
+                  `*Name:* ${values.name}`,
+                  `*Phone/WhatsApp:* ${values.phone}`,
+                  `*Email:* ${values.email}`,
+                  `*Background:* ${values.experience}`,
+                  values.currentRole ? `*Current Role:* ${values.currentRole}` : null,
+                  `*Preferred Timing:* ${values.preferredSchedule}`,
+                  values.question ? `*Question/Query:* ${values.question}` : null,
+                ]
+                  .filter(Boolean)
+                  .join("\n");
+
+                const whatsappUrl = `https://wa.me/919247954331?text=${encodeURIComponent(message)}`;
+
+                setSubmitting(false);
+                setIsBooked(true);
+
+                // Open WhatsApp chat in a new tab/window
+                if (typeof window !== "undefined") {
+                  window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+                }
               }}
             >
               {({ isSubmitting }) => (
