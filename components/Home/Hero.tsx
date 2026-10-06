@@ -28,9 +28,9 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Clear, readable subtitle with user's exact value proposition */}
+            {/* Clear, readable subtitle with user's value proposition */}
             <p className="mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
-              100% Job-Assured Oracle Fusion Financials Course with live training, real projects, and expert guidance to launch your ERP career. Advance your career in Financial Management—master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
+              <strong className="font-semibold text-slate-900">100% Job-Assured Oracle Fusion Financials Course</strong> with live training, real projects, and expert guidance to launch your ERP career. Advance your career in Financial Management—master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
             </p>
 
             {/* High-converting CTAs */}
