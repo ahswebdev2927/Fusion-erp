@@ -12,7 +12,6 @@ export const navigationLinks: NavItem[] = [
   { label: "Career Support", href: "/career-support", description: "Consultant roadmap, resume reviews & mock interviews" },
   { label: "Corporate Training", href: "/corporate-training", description: "Tailored upskilling for enterprise finance teams" },
   { label: "About Us", href: "/about", description: "Our approach, philosophy and instructor credentials" },
-  { label: "FAQ", href: "/faq", description: "Answers to common learner & enrollment questions" },
   { label: "Blog", href: "/blog", description: "Oracle Fusion insights, career guides, and tutorials" },
 ];
 

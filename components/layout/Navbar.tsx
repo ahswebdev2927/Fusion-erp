@@ -73,14 +73,8 @@ export default function Navbar() {
 
             {/* Right Action Area */}
             <div className="hidden lg:flex items-center gap-3">
-              <Link
-                href="/book-demo"
-                className="text-xs font-bold text-slate-700 hover:text-[#1D63ED] px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors"
-              >
-                Book Free Demo
-              </Link>
               <Button
-                href="/contact"
+                href="https://wa.me/919247954331?text=Hi%2C%20I%20am%20interested%20in%20the%20Oracle%20Fusion%20ERP%20Training%20program.%20Please%20share%20more%20details."
                 size="sm"
                 variant="primary"
                 icon={<ArrowRight className="w-3.5 h-3.5" />}
@@ -91,12 +85,14 @@ export default function Navbar() {
 
             {/* Mobile Toggle */}
             <div className="flex items-center gap-2 lg:hidden">
-              <Link
-                href="/book-demo"
-                className="text-xs font-bold bg-blue-50 text-[#1D63ED] px-3 py-1.5 rounded-lg border border-blue-200"
+              <a
+                href="https://wa.me/919247954331?text=Hi%2C%20I%20am%20interested%20in%20the%20Oracle%20Fusion%20ERP%20Training%20program.%20Please%20share%20more%20details."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold bg-[#1D63ED] text-white px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#124BC2] transition-colors"
               >
-                Book Demo
-              </Link>
+                Talk to Expert
+              </a>
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -168,20 +164,12 @@ export default function Navbar() {
 
             <div className="pt-6 border-t border-slate-200 space-y-2.5">
               <Button
-                href="/book-demo"
-                variant="outline"
-                className="w-full text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Book a Free Consultation
-              </Button>
-              <Button
-                href="/contact"
+                href="https://wa.me/919247954331?text=Hi%2C%20I%20am%20interested%20in%20the%20Oracle%20Fusion%20ERP%20Training%20program.%20Please%20share%20more%20details."
                 variant="primary"
                 className="w-full text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Talk to an Expert
+                Talk to an Expert (WhatsApp)
               </Button>
               <p className="text-xs text-center text-slate-500 pt-2 font-mono">
                 Admissions: {siteConfig.contact.phone}
