@@ -38,23 +38,17 @@ export default function Navbar() {
       >
         <Container size="xl">
           <div className="flex items-center justify-between">
-            {/* High-Contrast Brand Mark */}
+            {/* High-Contrast Brand Mark with Custom Logo */}
             <Link
               href="/"
-              className="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-lg"
+              className="flex items-center group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-lg py-1"
               aria-label="FusionERPTraining.com Homepage"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#0A192F] to-[#1D63ED] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                <Layers className="w-5 h-5 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-extrabold tracking-tight text-[#0A192F] leading-none">
-                  FusionERP<span className="text-[#1D63ED]">Training</span>
-                </span>
-                <span className="text-[10px] font-mono tracking-wider uppercase font-semibold text-slate-500 mt-0.5">
-                  Oracle Cloud Education
-                </span>
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Fusion ERP Training"
+                className="h-9 sm:h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              />
             </Link>
 
             {/* Desktop Navigation Links */}
@@ -133,9 +127,13 @@ export default function Navbar() {
           >
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-200">
-                <span className="font-extrabold text-[#0A192F] text-base tracking-tight">
-                  FusionERPTraining<span className="text-[#1D63ED]">.com</span>
-                </span>
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                  <img
+                    src="/images/logo.png"
+                    alt="Fusion ERP Training"
+                    className="h-8 w-auto object-contain"
+                  />
+                </Link>
                 <button
                   type="button"
                   onClick={() => setIsMobileMenuOpen(false)}

@@ -13,16 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-14 border-b border-slate-800/80">
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1769E0] to-[#2F80ED] flex items-center justify-center text-white shadow-md">
-                <Layers className="w-5 h-5 text-white" />
+            <Link href="/" className="inline-block group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-xl" aria-label="FusionERPTraining.com Homepage">
+              <div className="bg-white px-3.5 py-2 rounded-xl inline-flex items-center shadow-md transition-transform group-hover:scale-[1.02]">
+                <img
+                  src="/images/logo.png"
+                  alt="Fusion ERP Training"
+                  className="h-8 sm:h-9 w-auto object-contain"
+                />
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">
-                Fusion<span className="text-[#2F80ED]">ERP</span>
-                <span className="text-xs font-normal text-slate-400 block tracking-normal">
-                  Training.com
-                </span>
-              </span>
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
