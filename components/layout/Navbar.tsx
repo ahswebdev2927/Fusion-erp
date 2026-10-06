@@ -96,7 +96,7 @@ export default function Navbar() {
                 <img
                   src="/images/logo.png"
                   alt="Fusion ERP Training"
-                  className="h-10 sm:h-12 md:h-14 w-auto max-w-[200px] sm:max-w-[240px] md:max-w-[270px] object-contain transition-transform group-hover:scale-[1.02]"
+                  className="h-12 sm:h-14 md:h-16 w-auto max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[340px] object-contain transition-transform group-hover:scale-[1.02]"
                 />
               </Link>
             </div>
@@ -251,7 +251,7 @@ export default function Navbar() {
                   <img
                     src="/images/logo.png"
                     alt="Fusion ERP Training"
-                    className="h-9 w-auto object-contain"
+                    className="h-11 w-auto max-w-[220px] object-contain"
                   />
                 </Link>
                 <button
