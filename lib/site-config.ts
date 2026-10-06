@@ -5,10 +5,10 @@ export const siteConfig = {
     "Master Oracle Fusion Cloud Financials through hands-on business scenarios, enterprise workflows, and guided career preparation.",
   url: "https://fusionerptraining.com",
   contact: {
-    email: "fusionsrikanth.erp@gmail.com",
-    phone: "+1 (800) 555-FUSION",
-    whatsapp: "+1 (800) 555-3874",
-    hours: "Monday - Saturday, 9:00 AM - 7:00 PM EST",
+    email: "fusionerptraining@gmail.com",
+    phone: "+91 92479 54331",
+    whatsapp: "+91 92479 54331",
+    hours: "Monday - Saturday, 9:00 AM - 7:00 PM IST",
     location: "Global Online Training & Regional Hybrid Labs",
   },
   social: {

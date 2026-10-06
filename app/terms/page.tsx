@@ -43,7 +43,7 @@ export default function TermsPage() {
 
           <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">5. Governing Law</h2>
           <p>
-            These terms are governed by the laws applicable to enterprise educational services. For any disputes or inquiries, contact <strong>fusionsrikanth.erp@gmail.com</strong>.
+            These terms are governed by the laws applicable to enterprise educational services. For any disputes or inquiries, contact <strong>fusionerptraining@gmail.com</strong>.
           </p>
         </div>
       </Container>

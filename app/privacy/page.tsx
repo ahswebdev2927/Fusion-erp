@@ -54,7 +54,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">5. Contact Us</h2>
           <p>
-            If you have questions or wish to request data deletion, contact us at: <strong>fusionsrikanth.erp@gmail.com</strong>.
+            If you have questions or wish to request data deletion, contact us at: <strong>fusionerptraining@gmail.com</strong>.
           </p>
         </div>
       </Container>
