@@ -47,7 +47,7 @@ export default function Navbar() {
               <img
                 src="/images/logo.png"
                 alt="Fusion ERP Training"
-                className="h-9 sm:h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+                className="h-11 sm:h-14 md:h-16 w-auto max-w-[210px] sm:max-w-[260px] md:max-w-[300px] object-contain transition-transform group-hover:scale-[1.02]"
               />
             </Link>
 
