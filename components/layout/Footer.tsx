@@ -15,14 +15,14 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link
               href="/"
-              className="block group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-xl max-w-sm"
+              className="inline-block group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-xl"
               aria-label="FusionERPTraining.com Homepage"
             >
-              <div className="bg-white p-3 rounded-xl shadow-lg border border-slate-200/20 transition-all group-hover:scale-[1.01] w-full">
+              <div className="bg-white px-4 py-2.5 rounded-xl shadow-md border border-slate-200/20 transition-all group-hover:scale-[1.01] w-fit max-w-[240px] sm:max-w-[260px]">
                 <img
                   src="/images/logo.png"
                   alt="Fusion ERP Training"
-                  className="w-full h-auto max-h-24 object-contain"
+                  className="w-full h-auto max-h-12 object-contain"
                 />
               </div>
             </Link>
