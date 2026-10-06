@@ -10,16 +10,16 @@ export default function FinalCTA() {
       <Container size="lg">
         <div className="bg-white border-2 border-slate-300 rounded-3xl p-10 sm:p-16 lg:p-20 text-center shadow-card-hover relative overflow-hidden">
           <div className="max-w-2xl mx-auto">
-            <span className="text-xs font-mono font-bold text-[#1D63ED] bg-blue-50 border border-blue-200 px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4">
-              START YOUR TRANSFORMATION
+            <span className="text-xs font-mono font-bold text-[#059669] bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4">
+              LAUNCH YOUR ERP CAREER
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-black text-[#0A192F] tracking-tight leading-[1.12] mb-4">
-              Ready to build your Oracle Fusion journey?
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-[#0A192F] tracking-tight leading-[1.12] mb-4">
+              100% Job-Assured Oracle Fusion Financials Course
             </h2>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-8 font-normal">
-              Tell us where you&apos;re starting. We&apos;ll help you understand whether Oracle Fusion Cloud Financials aligns with your background and goals—honestly, objectively, and without pressure.
+              Advance your career in Financial Management with our expert-led Oracle Fusion Financials Course! Master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -29,14 +29,14 @@ export default function FinalCTA() {
                 variant="primary"
                 icon={<ArrowRight className="w-4 h-4" />}
               >
-                Book a Free Consultation
+                Start Your Journey Now
               </Button>
               <Button
-                href="/training"
+                href="/curriculum"
                 size="lg"
                 variant="outline"
               >
-                View Training Program
+                View 12-Module Syllabus
               </Button>
             </div>
 

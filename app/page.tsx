@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "@/components/Home/Hero";
 import TrustBar from "@/components/Home/TrustBar";
 import ProblemSolution from "@/components/Home/ProblemSolution";
+import CareerImpactBanner from "@/components/Home/CareerImpactBanner";
 import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import TrainingPath from "@/components/Home/TrainingPath";
 import ModulesGrid from "@/components/Home/ModulesGrid";
@@ -26,6 +27,9 @@ export default function HomePage() {
 
       {/* 3. Problem / Solution Transformation */}
       <ProblemSolution />
+
+      {/* 3b. 6-Figure Jobs Impact Banner (Matching Screenshot) */}
+      <CareerImpactBanner />
 
       {/* 4. Why Fusion ERP Training */}
       <WhyChooseUs />

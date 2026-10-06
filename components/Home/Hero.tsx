@@ -15,41 +15,41 @@ export default function Hero() {
           {/* Left Column: 7 Cols */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* High-visibility eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-mono font-bold text-[#1D63ED] uppercase tracking-wider mb-6 shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-[#1D63ED] animate-pulse" />
-              ORACLE FUSION FINANCIALS • CAREER-LED EDUCATION
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-mono font-bold text-[#059669] uppercase tracking-wider mb-6 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
+              100% JOB-ASSURED • LIVE PROJECTS & EXPERT GUIDANCE
             </div>
 
-            {/* Powerful headline with intentional weight pairings */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-black text-[#0A192F] tracking-tight leading-[1.08]">
-              Build Real Oracle Fusion Skills.{" "}
-              <span className="text-[#1D63ED] font-extrabold block mt-1">
-                Move Forward With Confidence.
+            {/* Powerful headline */}
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-[#0A192F] tracking-tight leading-[1.1]">
+              Oracle Fusion Financials Course with{" "}
+              <span className="text-[#1D63ED] font-extrabold block sm:inline">
+                Expert Training
               </span>
             </h1>
 
-            {/* Clear, readable subtitle with strong contrast */}
-            <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
-              Master Oracle Fusion Cloud Financials through actual business workflows, guided configuration labs, and consultant interview preparation. Clear, structured, and free of sales gimmicks.
+            {/* Clear, readable subtitle with user's exact value proposition */}
+            <p className="mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
+              100% Job-Assured Oracle Fusion Financials Course with live training, real projects, and expert guidance to launch your ERP career. Advance your career in Financial Management—master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
             </p>
 
             {/* High-converting CTAs */}
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
               <Button
-                href="/training"
+                href="/book-demo"
                 size="lg"
                 variant="primary"
                 icon={<ArrowRight className="w-4 h-4" />}
               >
-                Explore Training Program
+                Start Your Journey
               </Button>
               <Button
-                href="/book-demo"
+                href="/training"
                 size="lg"
                 variant="outline"
                 icon={<PlayCircle className="w-4 h-4 text-[#1D63ED]" />}
               >
-                Book a Free Consultation
+                Explore Course Details
               </Button>
             </div>
 
