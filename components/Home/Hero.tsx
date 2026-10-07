@@ -1,12 +1,38 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, ShieldCheck, Terminal, Compass, Layers, PlayCircle } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
+  const fullText = "Oracle Fusion Financials Course with Expert Training";
+  const prefix = "Oracle Fusion Financials Course with ";
+  const highlightWord = "Expert Training";
+  
+  const [displayText, setDisplayText] = useState("");
+  const [isTypingDone, setIsTypingDone] = useState(false);
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      index++;
+      if (index <= fullText.length) {
+        setDisplayText(fullText.slice(0, index));
+      } else {
+        setIsTypingDone(true);
+        clearInterval(interval);
+      }
+    }, 45); // snappy, modern typing cadence
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Split current typed progress into prefix and highlighted word
+  const currentPrefix = displayText.slice(0, Math.min(displayText.length, prefix.length));
+  const currentHighlight = displayText.length > prefix.length ? displayText.slice(prefix.length) : "";
+
   return (
     <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 bg-tech-mesh border-b border-slate-200 overflow-hidden">
       <Container size="xl">
@@ -14,23 +40,31 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: 7 Cols */}
           <div className="lg:col-span-7 flex flex-col items-start">
-            {/* High-visibility eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-mono font-bold text-[#059669] uppercase tracking-wider mb-6 shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
-              100% JOB-ASSURED • LIVE PROJECTS & EXPERT GUIDANCE
+            {/* High-visibility bold eyebrow badge */}
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-50 border-2 border-emerald-300 text-xs sm:text-[13px] font-mono font-extrabold text-[#047857] uppercase tracking-wider mb-6 shadow-sm">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse shrink-0" />
+              <span>100% JOB-ASSURED • LIVE PROJECTS & EXPERT GUIDANCE</span>
             </div>
 
-            {/* Powerful headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-[#0A192F] tracking-tight leading-[1.1]">
-              Oracle Fusion Financials Course with{" "}
-              <span className="text-[#1D63ED] font-extrabold block sm:inline">
-                Expert Training
-              </span>
+            {/* Powerful headline with typing animation */}
+            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-black text-[#0A192F] tracking-tight leading-[1.1] min-h-[120px] sm:min-h-[135px] lg:min-h-[175px]">
+              <span>{currentPrefix}</span>
+              {currentHighlight && (
+                <span className="text-[#1D63ED] font-extrabold">
+                  {currentHighlight}
+                </span>
+              )}
+              {/* Animated blinking cursor */}
+              <span
+                className={`inline-block w-1 h-9 sm:w-1.5 sm:h-11 lg:h-12 bg-[#1D63ED] ml-1.5 align-middle ${
+                  isTypingDone ? "animate-pulse" : "animate-bounce"
+                }`}
+              />
             </h1>
 
-            {/* Clear, readable subtitle with user's value proposition */}
+            {/* Clear, readable subtitle with user's value proposition (without live training mention) */}
             <p className="mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
-              <strong className="font-semibold text-slate-900">100% Job-Assured Oracle Fusion Financials Course</strong> with live training, real projects, and expert guidance to launch your ERP career. Advance your career in Financial Management—master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
+              <strong className="font-semibold text-slate-900">100% Job-Assured Oracle Fusion Financials Course</strong> with real projects and expert guidance to launch your ERP career. Advance your career in Financial Management—master key financial modules, gain real-time hands-on experience, and build the skills needed to excel in today’s dynamic finance and accounting landscape.
             </p>
 
             {/* High-converting CTAs */}
