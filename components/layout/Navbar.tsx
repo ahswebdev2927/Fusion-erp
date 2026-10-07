@@ -197,36 +197,21 @@ export default function Navbar() {
 
                 {/* Dropdown Menu Box */}
                 {isCoursesOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 sm:w-96 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
-                    <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-3.5 space-y-1">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 sm:w-80 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
+                    <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-2">
                       <Link
                         href="/oracle-fusion-finance-training"
                         onClick={() => setIsCoursesOpen(false)}
-                        className="p-3.5 rounded-xl hover:bg-blue-50/60 border border-transparent hover:border-blue-200 transition-all block group"
+                        className="p-3 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200 transition-all flex items-center justify-between group"
                       >
-                        <div className="flex items-center justify-between mb-1">
-                          <span className="font-extrabold text-sm text-[#0A192F] group-hover:text-[#1D63ED] transition-colors flex items-center gap-1.5">
-                            <Sparkles className="w-4 h-4 text-[#1D63ED]" />
-                            Oracle Fusion Cloud Financials
-                          </span>
-                          <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                            FLAGSHIP
-                          </span>
-                        </div>
-                        <p className="text-xs text-slate-600 leading-relaxed font-normal">
-                          Complete 10-12 week training program covering GL, AP, AR, SLA, Cash Management, and live cloud labs.
-                        </p>
+                        <span className="font-extrabold text-sm text-[#0A192F] group-hover:text-[#1D63ED] transition-colors flex items-center gap-2">
+                          <Sparkles className="w-4 h-4 text-[#1D63ED]" />
+                          Oracle Fusion Cloud Financials
+                        </span>
+                        <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                          FLAGSHIP
+                        </span>
                       </Link>
-
-                      <div className="pt-2 border-t border-slate-100 flex items-center justify-between px-2 text-xs">
-                        <Link
-                          href="/curriculum"
-                          onClick={() => setIsCoursesOpen(false)}
-                          className="font-bold text-[#1D63ED] hover:underline"
-                        >
-                          View 12-Module Syllabus →
-                        </Link>
-                      </div>
                     </div>
                   </div>
                 )}
@@ -351,21 +336,16 @@ export default function Navbar() {
                       <Link
                         href="/oracle-fusion-finance-training"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`p-2.5 rounded-md text-xs font-semibold block ${
+                        className={`p-2.5 rounded-md text-xs font-semibold flex items-center justify-between ${
                           pathname === "/oracle-fusion-finance-training"
                             ? "bg-blue-50 text-[#1D63ED]"
                             : "text-slate-700 hover:bg-slate-50"
                         }`}
                       >
-                        <div className="font-bold text-slate-900">Oracle Fusion Cloud Financials</div>
-                        <div className="text-[11px] text-slate-500 mt-0.5">10-12 Week Comprehensive Program</div>
-                      </Link>
-                      <Link
-                        href="/curriculum"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="px-2.5 py-1.5 text-xs text-[#1D63ED] font-bold block hover:underline"
-                      >
-                        → View 12-Module Syllabus
+                        <span className="font-bold text-slate-900">Oracle Fusion Cloud Financials</span>
+                        <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                          FLAGSHIP
+                        </span>
                       </Link>
                     </div>
                   )}
