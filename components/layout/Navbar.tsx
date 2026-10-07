@@ -99,6 +99,7 @@ export default function Navbar() {
                 >
                   <FaInstagram className="w-3 h-3" />
                 </a>
+                {/* 
                 <a
                   href={siteConfig.social.linkedin}
                   target="_blank"
@@ -119,6 +120,7 @@ export default function Navbar() {
                 >
                   <FaYoutube className="w-3 h-3" />
                 </a>
+                */}
               </div>
             </div>
           </div>
@@ -420,6 +422,7 @@ export default function Navbar() {
                 >
                   <FaInstagram className="w-3.5 h-3.5" />
                 </a>
+                {/* 
                 <a
                   href={siteConfig.social.linkedin}
                   target="_blank"
@@ -438,6 +441,7 @@ export default function Navbar() {
                 >
                   <FaYoutube className="w-3.5 h-3.5" />
                 </a>
+                */}
               </div>
             </div>
           </div>

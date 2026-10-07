@@ -72,6 +72,7 @@ export default function Footer() {
               >
                 <FaInstagram className="w-4 h-4" />
               </a>
+              {/* 
               <a
                 href={siteConfig.social.linkedin}
                 target="_blank"
@@ -102,6 +103,7 @@ export default function Footer() {
               >
                 <FaTwitter className="w-4 h-4" />
               </a>
+              */}
             </div>
           </div>
 
