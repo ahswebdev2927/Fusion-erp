@@ -12,9 +12,8 @@ const DemoSchema = Yup.object().shape({
   name: Yup.string().trim().required("Your full name is required"),
   phone: Yup.string().trim().min(7, "Valid phone or WhatsApp number is required").required("Phone number is required"),
   email: Yup.string().trim().email("Valid email required").required("Email is required"),
-  experience: Yup.string().required("Please select your background"),
+  experience: Yup.string().required("Please select your background level"),
   currentRole: Yup.string().trim(),
-  preferredSchedule: Yup.string().required("Please select your preferred schedule"),
   question: Yup.string().trim(),
 });
 
@@ -76,7 +75,6 @@ export default function BookDemoPage() {
                 email: "",
                 experience: "Finance / Accounting Graduate",
                 currentRole: "",
-                preferredSchedule: "Weekend Morning (EST / IST)",
                 question: "",
               }}
               validationSchema={DemoSchema}
@@ -87,9 +85,8 @@ export default function BookDemoPage() {
                   `*Name:* ${values.name}`,
                   `*Phone/WhatsApp:* ${values.phone}`,
                   `*Email:* ${values.email}`,
-                  `*Background:* ${values.experience}`,
+                  `*Background Level:* ${values.experience}`,
                   values.currentRole ? `*Current Role:* ${values.currentRole}` : null,
-                  `*Preferred Timing:* ${values.preferredSchedule}`,
                   values.question ? `*Question/Query:* ${values.question}` : null,
                 ]
                   .filter(Boolean)
@@ -107,7 +104,7 @@ export default function BookDemoPage() {
               }}
             >
               {({ isSubmitting }) => (
-                <Form className="space-y-4.5">
+                <Form className="space-y-5">
                   <div>
                     <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
                       Full Name *
@@ -129,7 +126,7 @@ export default function BookDemoPage() {
                       <Field
                         name="phone"
                         type="text"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+91 92479 54331"
                         className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
                       />
                       <ErrorMessage name="phone" component="div" className="text-xs text-rose-600 font-bold mt-1" />
@@ -154,46 +151,37 @@ export default function BookDemoPage() {
                       <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
                         Background Level *
                       </label>
-                      <Field
-                        as="select"
-                        name="experience"
-                        className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
-                      >
-                        <option value="Finance / Accounting Graduate">Finance / Accounting Graduate</option>
-                        <option value="Working Accountant / Controller">Working Accountant / Controller</option>
-                        <option value="Oracle EBS R12 Consultant">Oracle EBS R12 Consultant</option>
-                        <option value="Other ERP Consultant (SAP/NetSuite)">Other ERP Consultant (SAP/NetSuite)</option>
-                        <option value="Career Switcher / Career Gap">Career Switcher / Career Gap</option>
-                      </Field>
+                      <div className="relative">
+                        <Field
+                          as="select"
+                          name="experience"
+                          className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white cursor-pointer"
+                        >
+                          <option value="Any Graduate">Any Graduate</option>
+                          <option value="Finance / Accounting Graduate">Finance / Accounting Graduate</option>
+                          <option value="Commerce Graduate">Commerce Graduate</option>
+                          <option value="MBA / Management">MBA / Management</option>
+                          <option value="CA / CMA / ACCA">CA / CMA / ACCA</option>
+                          <option value="Engineering Graduate">Engineering Graduate</option>
+                          <option value="Other Graduate">Other Graduate</option>
+                          <option value="Postgraduate">Postgraduate</option>
+                          <option value="Working Professional">Working Professional</option>
+                        </Field>
+                      </div>
+                      <ErrorMessage name="experience" component="div" className="text-xs text-rose-600 font-bold mt-1" />
                     </div>
 
                     <div>
                       <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
-                        Preferred Timing *
+                        Current Role (Optional)
                       </label>
                       <Field
-                        as="select"
-                        name="preferredSchedule"
+                        name="currentRole"
+                        type="text"
+                        placeholder="e.g. Accountant, Financial Analyst"
                         className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
-                      >
-                        <option value="Weekend Morning (EST / IST)">Weekend Morning (EST / IST)</option>
-                        <option value="Weekend Evening (EST / IST)">Weekend Evening (EST / IST)</option>
-                        <option value="Weekday Evening (EST / IST)">Weekday Evening (EST / IST)</option>
-                        <option value="Any Flexible Time Slot">Any Flexible Time Slot</option>
-                      </Field>
+                      />
                     </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
-                      Current Role (Optional)
-                    </label>
-                    <Field
-                      name="currentRole"
-                      type="text"
-                      placeholder="e.g. Accounts Payable Specialist, MBA Student"
-                      className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
-                    />
                   </div>
 
                   <div>
