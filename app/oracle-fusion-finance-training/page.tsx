@@ -31,24 +31,9 @@ export default function TrainingPage() {
             <h1 className="text-4xl sm:text-5xl font-black text-[#0A192F] tracking-tight leading-tight mb-6">
               Oracle Fusion Financials Training Built Around Practical Understanding
             </h1>
-            <p className="text-lg text-slate-700 leading-relaxed mb-8 font-normal">
-              A complete 10-to-12 week professional program designed to transition graduates, accountants, and IT specialists into confident Oracle Fusion Cloud functional consultants.
+            <p className="text-lg text-slate-700 leading-relaxed font-normal">
+              A complete professional program designed to transition graduates, accountants, and IT specialists into confident Oracle Fusion Cloud functional consultants.
             </p>
-
-            <div className="flex flex-wrap gap-3 text-xs sm:text-sm font-bold text-slate-800">
-              <div className="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border-2 border-slate-200 shadow-2xs">
-                <Clock className="w-4 h-4 text-[#1D63ED]" />
-                <span>10 - 12 Weeks (Flexible cohorts)</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border-2 border-slate-200 shadow-2xs">
-                <Laptop className="w-4 h-4 text-[#059669]" />
-                <span>Live Cloud Sandbox Access</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border-2 border-slate-200 shadow-2xs">
-                <Users className="w-4 h-4 text-[#1D63ED]" />
-                <span>Interactive Batches</span>
-              </div>
-            </div>
           </div>
 
           {/* Right-side training hero photo */}
