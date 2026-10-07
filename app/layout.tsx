@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ScrollToTop from "@/components/layout/ScrollToTop";
 import WhatsAppFloatingButton from "@/components/ui/WhatsAppFloatingButton";
+import CallFloatingButton from "@/components/ui/CallFloatingButton";
 import { siteConfig } from "@/lib/site-config";
 
 const inter = Inter({
@@ -89,7 +89,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
-        <ScrollToTop />
+        <CallFloatingButton />
         <WhatsAppFloatingButton />
       </body>
     </html>
