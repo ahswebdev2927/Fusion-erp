@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight, ChevronDown, Mail, Phone, Sparkles } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site-config";
@@ -67,10 +68,58 @@ export default function Navbar() {
               </a>
             </div>
 
-            {/* Right: Batch info badge */}
-            <div className="hidden md:flex items-center gap-2 text-[11px] text-slate-300 font-mono">
-              <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
-              <span>Weekend & Weekday Batches • Global Cloud Labs</span>
+            {/* Right: Batch info badge + Social Media Links */}
+            <div className="flex items-center gap-3 sm:gap-4 text-[11px] text-slate-300">
+              <div className="hidden md:flex items-center gap-2 font-mono text-slate-400">
+                <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
+                <span>Batch Starting Soon</span>
+              </div>
+
+              <div className="hidden md:block w-px h-3.5 bg-slate-700" />
+
+              {/* Social icons */}
+              <div className="flex items-center gap-2">
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  aria-label="Follow us on Facebook"
+                  title="Facebook"
+                >
+                  <FaFacebookF className="w-3 h-3" />
+                </a>
+                <a
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  aria-label="Follow us on Instagram"
+                  title="Instagram"
+                >
+                  <FaInstagram className="w-3 h-3" />
+                </a>
+                <a
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-[#0A66C2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  aria-label="Connect on LinkedIn"
+                  title="LinkedIn"
+                >
+                  <FaLinkedinIn className="w-3 h-3" />
+                </a>
+                <a
+                  href={siteConfig.social.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-[#FF0000] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  aria-label="Subscribe on YouTube"
+                  title="YouTube"
+                >
+                  <FaYoutube className="w-3 h-3" />
+                </a>
+              </div>
             </div>
           </div>
         </Container>
@@ -349,6 +398,46 @@ export default function Navbar() {
               <div className="text-xs text-center text-slate-600 space-y-1 font-mono">
                 <div>📞 {siteConfig.contact.phone}</div>
                 <div className="text-[11px] text-slate-500">{siteConfig.contact.email}</div>
+              </div>
+
+              {/* Social links in mobile menu */}
+              <div className="flex items-center justify-center gap-3 pt-2">
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1877F2] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  aria-label="Facebook"
+                >
+                  <FaFacebookF className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#E4405F] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#0A66C2] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedinIn className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href={siteConfig.social.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#FF0000] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  aria-label="YouTube"
+                >
+                  <FaYoutube className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Layers, Mail, Phone, MapPin, ShieldCheck } from "lucide-react";
-import { FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
 import Container from "@/components/ui/Container";
 import { footerLinks } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site-config";
@@ -50,13 +50,35 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 pt-4">
+            {/* Social Media Links */}
+            <div className="flex items-center gap-2.5 pt-4">
+              <a
+                href={siteConfig.social.facebook}
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
+                aria-label="Facebook page"
+                title="Facebook"
+              >
+                <FaFacebookF className="w-4 h-4" />
+              </a>
+              <a
+                href={siteConfig.social.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
+                aria-label="Instagram profile"
+                title="Instagram"
+              >
+                <FaInstagram className="w-4 h-4" />
+              </a>
               <a
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1769E0] text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#0A66C2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                 aria-label="LinkedIn profile"
+                title="LinkedIn"
               >
                 <FaLinkedinIn className="w-4 h-4" />
               </a>
@@ -64,8 +86,9 @@ export default function Footer() {
                 href={siteConfig.social.youtube}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1769E0] text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#FF0000] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                 aria-label="YouTube Channel"
+                title="YouTube"
               >
                 <FaYoutube className="w-4 h-4" />
               </a>
@@ -73,8 +96,9 @@ export default function Footer() {
                 href={siteConfig.social.twitter}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1769E0] text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1D9BF0] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                 aria-label="Twitter profile"
+                title="Twitter"
               >
                 <FaTwitter className="w-4 h-4" />
               </a>

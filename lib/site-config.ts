@@ -12,6 +12,8 @@ export const siteConfig = {
     location: "Global Online Training & Regional Hybrid Labs",
   },
   social: {
+    facebook: "https://www.facebook.com/fusionerptraining",
+    instagram: "https://www.instagram.com/fusionerptraining/",
     linkedin: "https://linkedin.com/company/fusion-erp-training",
     youtube: "https://youtube.com/@fusionerptraining",
     twitter: "https://twitter.com/fusionerpcloud",
