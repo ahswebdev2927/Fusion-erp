@@ -282,7 +282,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "01",
     title: "Foundations & Architecture",
-    duration: "Week 1 - 2",
+    duration: "Phase 1",
     description: "Understand Oracle Cloud SaaS architecture, enterprise structures, multi-org concepts, and navigation fundamentals.",
     modulesCovered: ["Enterprise Structure", "Functional Setup Manager", "Navigation Basics"],
     keyOutcome: "Confidence in cloud system layout and organizational hierarchy modeling.",
@@ -290,7 +290,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "02",
     title: "Core Financial Ledgers",
-    duration: "Week 3 - 4",
+    duration: "Phase 2",
     description: "Deep dive into General Ledger design: Chart of accounts, primary/secondary ledgers, calendars, and currency handling.",
     modulesCovered: ["General Ledger (GL)", "ADFdi Journal Uploads", "Financial Closing"],
     keyOutcome: "Ability to configure financial ledgers from scratch and manage period-close accounting.",
@@ -298,7 +298,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "03",
     title: "Subledger Execution (AP & AR)",
-    duration: "Week 5 - 7",
+    duration: "Phase 3",
     description: "Operate payables and receivables engines with supplier/customer models, matching tolerances, and payment runs.",
     modulesCovered: ["Accounts Payable", "Accounts Receivable", "Cash Application"],
     keyOutcome: "Hands-on execution of daily corporate transactional volumes and invoice matching.",
@@ -306,7 +306,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "04",
     title: "Cash, Assets & Specialized Engines",
-    duration: "Week 8 - 9",
+    duration: "Phase 4",
     description: "Master bank auto-reconciliation, liquidity management, asset lifecycle accounting, employee expenses, and indirect taxes.",
     modulesCovered: ["Cash Management", "Fixed Assets", "Expenses", "Fusion Tax"],
     keyOutcome: "Mastery of treasury reconciliation, asset capitalization, and global tax rules.",
@@ -314,7 +314,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "05",
     title: "Cross-Module Business Processes",
-    duration: "Week 10 - 11",
+    duration: "Phase 5",
     description: "Execute end-to-end P2P, O2C, and R2R corporate workflows with SLA rules and subledger-to-GL reconciliations.",
     modulesCovered: ["Procure-to-Pay", "Order-to-Cash", "Record-to-Report", "SLA Rules"],
     keyOutcome: "Holistic comprehension of how multinational enterprises operate seamlessly on Oracle Cloud.",
@@ -322,7 +322,7 @@ export const trainingStages: TrainingStage[] = [
   {
     step: "06",
     title: "Reporting & Career Readiness",
-    duration: "Week 12",
+    duration: "Phase 6",
     description: "Construct OTBI analytics dashboards, Smart View models, followed by rigorous interview prep and resume polishing.",
     modulesCovered: ["OTBI Analytics", "Smart View / FRS", "Mock Interviews", "Resume Workshops"],
     keyOutcome: "Ready to sit for Oracle certification and interview confidently for consultant roles.",
