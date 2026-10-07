@@ -16,24 +16,18 @@ export const navigationLinks: NavItem[] = [
 ];
 
 export const footerLinks = {
-  training: [
+  course: [
     { label: "Oracle Fusion Financials", href: "/oracle-fusion-finance-training" },
-    { label: "Detailed Curriculum", href: "/curriculum" },
-    { label: "Training Program Overview", href: "/oracle-fusion-finance-training" },
-    { label: "Career Acceleration", href: "/career-support" },
-    { label: "Enterprise Corporate Training", href: "/corporate-training" },
+    { label: "Course Curriculum", href: "/curriculum" },
+    { label: "Career & Interview Support", href: "/career-support" },
+    { label: "Corporate Team Training", href: "/corporate-training" },
+    { label: "Book Free Consultation", href: "/book-demo" },
   ],
   company: [
-    { label: "About Our Mission", href: "/about" },
-    { label: "Contact Admissions", href: "/contact" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact Us", href: "/contact" },
     { label: "Frequently Asked Questions", href: "/faq" },
-    { label: "Articles & Knowledge Hub", href: "/blog" },
-  ],
-  resources: [
-    { label: "Procure-to-Pay (P2P) Guide", href: "/blog/mastering-procure-to-pay-p2p-in-oracle-fusion" },
-    { label: "Record-to-Report (R2R) Process", href: "/blog/understanding-record-to-report-workflow" },
-    { label: "Fusion Consultant Career Path", href: "/career-support" },
-    { label: "Oracle Certification Roadmap", href: "/oracle-fusion-finance-training" },
+    { label: "Blog & Knowledge Hub", href: "/blog" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
