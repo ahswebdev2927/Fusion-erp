@@ -9,7 +9,7 @@ export const siteConfig = {
     phone: "+91 92479 54331",
     whatsapp: "+91 92479 54331",
     hours: "Monday - Saturday, 9:00 AM - 7:00 PM IST",
-    location: "Global Online Training & Regional Hybrid Labs",
+    location: "4th Floor,Manjeera Trinity Corporate,Kukatpally,Hyderabad,Telangana 500072",
   },
   social: {
     facebook: "https://www.facebook.com/fusionerptraining",
