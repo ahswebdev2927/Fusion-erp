@@ -20,9 +20,9 @@ export default function CareerImpactBanner() {
 
           <div className="max-w-4xl relative z-10">
             {/* Eyebrow badge aligned to brand */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-xs font-mono font-bold text-blue-200 uppercase tracking-wider mb-5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              HIGH-IMPACT CAREER TRANSFORMATION
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-500/25 border-2 border-blue-400/40 text-xs sm:text-[13px] font-mono font-black text-white uppercase tracking-wider mb-5 shadow-sm">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span>HIGH-IMPACT CAREER TRANSFORMATION</span>
             </div>
 
             {/* High-impact Headline tailored to Oracle Fusion Financials */}
