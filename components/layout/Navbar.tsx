@@ -47,35 +47,35 @@ export default function Navbar() {
   return (
     <>
       {/* 1. Top Contact Strip */}
-      <div className="bg-[#0A192F] text-slate-200 border-b border-slate-800 text-xs py-2 px-4 select-none relative z-50">
+      <div className="bg-[#0A192F] text-slate-200 border-b border-slate-800 text-xs sm:text-[13px] py-2 px-4 select-none relative z-50">
         <Container size="xl">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4">
             {/* Left: Email & Phone */}
-            <div className="flex items-center gap-4 sm:gap-6 font-medium">
+            <div className="flex items-center gap-4 sm:gap-6 font-semibold">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 hover:text-white transition-colors"
               >
-                <Mail className="w-3.5 h-3.5 text-[#1D63ED]" />
-                <span>{siteConfig.contact.email}</span>
+                <Mail className="w-4 h-4 text-[#1D63ED]" />
+                <span className="text-slate-100">{siteConfig.contact.email}</span>
               </a>
               <a
                 href={`tel:${siteConfig.contact.phone.replace(/[^0-9+]/g, "")}`}
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors font-mono"
+                className="inline-flex items-center gap-2 hover:text-white transition-colors font-mono font-bold"
               >
-                <Phone className="w-3.5 h-3.5 text-[#059669]" />
-                <span>{siteConfig.contact.phone}</span>
+                <Phone className="w-4 h-4 text-[#059669]" />
+                <span className="text-slate-100">{siteConfig.contact.phone}</span>
               </a>
             </div>
 
             {/* Right: Batch info badge + Social Media Links */}
-            <div className="flex items-center gap-3 sm:gap-4 text-[11px] text-slate-300">
-              <div className="hidden md:flex items-center gap-2 font-mono text-slate-400">
-                <span className="w-2 h-2 rounded-full bg-[#059669] animate-pulse" />
+            <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-[13px] text-slate-300">
+              <div className="hidden md:flex items-center gap-2 font-mono text-slate-300 font-medium">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse" />
                 <span>Batch Starting Soon</span>
               </div>
 
-              <div className="hidden md:block w-px h-3.5 bg-slate-700" />
+              <div className="hidden md:block w-px h-4 bg-slate-700" />
 
               {/* Social icons */}
               <div className="flex items-center gap-2">
@@ -83,21 +83,21 @@ export default function Navbar() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-7 h-7 rounded-md bg-slate-800/90 hover:bg-[#1877F2] text-slate-200 hover:text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Follow us on Facebook"
                   title="Facebook"
                 >
-                  <FaFacebookF className="w-3 h-3" />
+                  <FaFacebookF className="w-3.5 h-3.5" />
                 </a>
                 <a
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-6 h-6 rounded-md bg-slate-800/90 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-7 h-7 rounded-md bg-slate-800/90 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-200 hover:text-white flex items-center justify-center transition-all hover:scale-110"
                   aria-label="Follow us on Instagram"
                   title="Instagram"
                 >
-                  <FaInstagram className="w-3 h-3" />
+                  <FaInstagram className="w-3.5 h-3.5" />
                 </a>
                 {/* 
                 <a
@@ -129,10 +129,10 @@ export default function Navbar() {
 
       {/* 2. Main Sticky Navigation Header */}
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-200 border-b ${
+        className={`sticky top-0 z-40 w-full transition-all duration-200 border-b py-0 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md border-slate-200 shadow-sm py-2.5"
-            : "bg-white/90 backdrop-blur-sm border-slate-200 py-3"
+            ? "bg-white/95 backdrop-blur-md border-slate-200 shadow-sm"
+            : "bg-white/90 backdrop-blur-sm border-slate-200"
         }`}
       >
         <Container size="xl">
@@ -141,7 +141,7 @@ export default function Navbar() {
             <div className="lg:col-span-4 flex items-center">
               <Link
                 href="/"
-                className="flex items-center group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-lg py-1"
+                className="flex items-center group focus-visible:ring-2 focus-visible:ring-[#1D63ED] rounded-lg py-0"
                 aria-label="FusionERPTraining.com Homepage"
               >
                 <img
