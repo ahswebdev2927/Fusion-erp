@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/about",
-    "/training",
+    "/oracle-fusion-finance-training",
     "/curriculum",
     "/career-support",
     "/corporate-training",

@@ -78,7 +78,7 @@ export default function Hero() {
                 Start Your Journey
               </Button>
               <Button
-                href="/training"
+                href="/oracle-fusion-finance-training"
                 size="lg"
                 variant="outline"
                 icon={<PlayCircle className="w-4 h-4 text-[#1D63ED]" />}

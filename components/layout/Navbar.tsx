@@ -42,7 +42,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const isCoursesActive = pathname === "/training" || pathname === "/curriculum";
+  const isCoursesActive = pathname === "/oracle-fusion-finance-training" || pathname === "/curriculum";
 
   return (
     <>
@@ -200,7 +200,7 @@ export default function Navbar() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 sm:w-96 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
                     <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-3.5 space-y-1">
                       <Link
-                        href="/training"
+                        href="/oracle-fusion-finance-training"
                         onClick={() => setIsCoursesOpen(false)}
                         className="p-3.5 rounded-xl hover:bg-blue-50/60 border border-transparent hover:border-blue-200 transition-all block group"
                       >
@@ -349,10 +349,10 @@ export default function Navbar() {
                   {isMobileCoursesOpen && (
                     <div className="p-2 space-y-1 bg-white">
                       <Link
-                        href="/training"
+                        href="/oracle-fusion-finance-training"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={`p-2.5 rounded-md text-xs font-semibold block ${
-                          pathname === "/training"
+                          pathname === "/oracle-fusion-finance-training"
                             ? "bg-blue-50 text-[#1D63ED]"
                             : "text-slate-700 hover:bg-slate-50"
                         }`}
