@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import WhatsAppFloatingButton from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/lib/site-config";
 
 const inter = Inter({
@@ -79,6 +80,7 @@ export default function RootLayout({
         <main className="flex-1 w-full">{children}</main>
         <Footer />
         <ScrollToTop />
+        <WhatsAppFloatingButton />
       </body>
     </html>
   );
