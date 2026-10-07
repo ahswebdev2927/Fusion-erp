@@ -56,7 +56,7 @@ export default function Footer() {
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
+                className="w-9 h-9 rounded-lg bg-[#1877F2] text-white flex items-center justify-center transition-all hover:scale-110 shadow-xs"
                 aria-label="Facebook page"
                 title="Facebook"
               >
@@ -66,7 +66,7 @@ export default function Footer() {
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
+                className="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center transition-all hover:scale-110 shadow-xs"
                 aria-label="Instagram profile"
                 title="Instagram"
               >

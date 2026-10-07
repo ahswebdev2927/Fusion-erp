@@ -83,7 +83,7 @@ export default function Navbar() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-md bg-slate-800/90 hover:bg-[#1877F2] text-slate-200 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-7 h-7 rounded-md bg-[#1877F2] text-white flex items-center justify-center transition-all hover:scale-110 shadow-xs"
                   aria-label="Follow us on Facebook"
                   title="Facebook"
                 >
@@ -93,7 +93,7 @@ export default function Navbar() {
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-7 h-7 rounded-md bg-slate-800/90 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-200 hover:text-white flex items-center justify-center transition-all hover:scale-110"
+                  className="w-7 h-7 rounded-md bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center transition-all hover:scale-110 shadow-xs"
                   aria-label="Follow us on Instagram"
                   title="Instagram"
                 >
@@ -408,7 +408,7 @@ export default function Navbar() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1877F2] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  className="w-8 h-8 rounded-lg bg-[#1877F2] text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                   aria-label="Facebook"
                 >
                   <FaFacebookF className="w-3.5 h-3.5" />
@@ -417,7 +417,7 @@ export default function Navbar() {
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#E4405F] text-slate-600 hover:text-white flex items-center justify-center transition-colors shadow-xs"
+                  className="w-8 h-8 rounded-lg bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                   aria-label="Instagram"
                 >
                   <FaInstagram className="w-3.5 h-3.5" />
