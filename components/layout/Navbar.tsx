@@ -197,20 +197,25 @@ export default function Navbar() {
 
                 {/* Dropdown Menu Box */}
                 {isCoursesOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 sm:w-80 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
-                    <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-2">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-80 sm:w-96 z-50 animate-in fade-in-0 zoom-in-95 duration-150">
+                    <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-xl p-2.5">
                       <Link
                         href="/oracle-fusion-finance-training"
                         onClick={() => setIsCoursesOpen(false)}
-                        className="p-3 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200 transition-all flex items-center justify-between group"
+                        className="p-3.5 rounded-xl hover:bg-blue-50/70 border border-transparent hover:border-blue-200 transition-all block group"
                       >
-                        <span className="font-extrabold text-sm text-[#0A192F] group-hover:text-[#1D63ED] transition-colors flex items-center gap-2">
-                          <Sparkles className="w-4 h-4 text-[#1D63ED]" />
-                          Oracle Fusion Cloud Financials
-                        </span>
-                        <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                          FLAGSHIP
-                        </span>
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="font-extrabold text-sm text-[#0A192F] group-hover:text-[#1D63ED] transition-colors flex items-center gap-2">
+                            <Sparkles className="w-4 h-4 text-[#1D63ED]" />
+                            Oracle Fusion Cloud Financials
+                          </span>
+                          <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 shrink-0">
+                            FLAGSHIP
+                          </span>
+                        </div>
+                        <p className="text-xs text-slate-500 group-hover:text-slate-700 transition-colors pl-6 font-medium">
+                          100% Job-Assured Functional Consultant Training & Live Cloud Pods
+                        </p>
                       </Link>
                     </div>
                   </div>
@@ -336,16 +341,21 @@ export default function Navbar() {
                       <Link
                         href="/oracle-fusion-finance-training"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`p-2.5 rounded-md text-xs font-semibold flex items-center justify-between ${
+                        className={`p-2.5 rounded-md text-xs font-semibold block ${
                           pathname === "/oracle-fusion-finance-training"
                             ? "bg-blue-50 text-[#1D63ED]"
                             : "text-slate-700 hover:bg-slate-50"
                         }`}
                       >
-                        <span className="font-bold text-slate-900">Oracle Fusion Cloud Financials</span>
-                        <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
-                          FLAGSHIP
-                        </span>
+                        <div className="flex items-center justify-between mb-0.5">
+                          <span className="font-bold text-slate-900">Oracle Fusion Cloud Financials</span>
+                          <span className="text-[10px] font-mono font-bold text-[#059669] bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                            FLAGSHIP
+                          </span>
+                        </div>
+                        <div className="text-[11px] text-slate-500 font-medium">
+                          100% Job-Assured Functional Consultant Training & Live Cloud Pods
+                        </div>
                       </Link>
                     </div>
                   )}
