@@ -14,7 +14,6 @@ const DemoSchema = Yup.object().shape({
   email: Yup.string().trim().email("Valid email required").required("Email is required"),
   experience: Yup.string().required("Please select your background level"),
   currentRole: Yup.string().trim(),
-  question: Yup.string().trim(),
 });
 
 export default function BookDemoPage() {
@@ -75,7 +74,6 @@ export default function BookDemoPage() {
                 email: "",
                 experience: "Finance / Accounting Graduate",
                 currentRole: "",
-                question: "",
               }}
               validationSchema={DemoSchema}
               onSubmit={(values, { setSubmitting }) => {
@@ -87,7 +85,6 @@ export default function BookDemoPage() {
                   `*Email:* ${values.email}`,
                   `*Background Level:* ${values.experience}`,
                   values.currentRole ? `*Current Role:* ${values.currentRole}` : null,
-                  values.question ? `*Question/Query:* ${values.question}` : null,
                 ]
                   .filter(Boolean)
                   .join("\n");
@@ -182,19 +179,6 @@ export default function BookDemoPage() {
                         className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
                       />
                     </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
-                      What is your biggest question? (Optional)
-                    </label>
-                    <Field
-                      as="textarea"
-                      name="question"
-                      rows={3}
-                      placeholder="Tell us what you'd like clarity on during our call..."
-                      className="w-full px-4 py-3 rounded-xl border-2 border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white"
-                    />
                   </div>
 
                   <div className="pt-2">
