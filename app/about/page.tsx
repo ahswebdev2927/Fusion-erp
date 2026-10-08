@@ -22,10 +22,10 @@ export default function AboutPage() {
             ABOUT FUSIONERPTRAINING.COM
           </span>
           <h1 className="text-4xl sm:text-5xl font-black text-[#0A192F] tracking-tight leading-tight mb-6">
-            Building practical ERP education that respects the learner&apos;s journey.
+            Is This Oracle Fusion Financials Training Perfect for Your Career Path?
           </h1>
           <p className="text-lg text-slate-700 leading-relaxed font-normal">
-            We founded FusionERPTraining.com because we saw a pervasive problem across the enterprise IT training industry: institutions teaching isolated button clicks and making exaggerated placement claims, leaving graduates unready for real-world client engagements.
+            Unlock career opportunities with Oracle Fusion Financials Online Training, designed to sharpen your skills and help you stay ahead in finance and accounting.
           </p>
         </div>
 
