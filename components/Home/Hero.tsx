@@ -41,9 +41,9 @@ export default function Hero() {
           {/* Left Column: 7 Cols */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* High-visibility bold eyebrow badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-50 border-2 border-emerald-300 text-xs sm:text-[13px] font-mono font-extrabold text-[#047857] uppercase tracking-wider mb-6 shadow-sm">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse shrink-0" />
-              <span>100% JOB-ASSURED • LIVE PROJECTS & EXPERT GUIDANCE</span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-50 border-2 border-emerald-400 text-xs sm:text-[13px] font-black tracking-wider text-emerald-950 uppercase mb-6 shadow-sm">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse shrink-0" />
+              <span className="font-black tracking-wide">100% JOB-ASSURED • LIVE PROJECTS & EXPERT GUIDANCE</span>
             </div>
 
             {/* Powerful headline with typing animation */}
