@@ -138,10 +138,6 @@ export default function TrainingPage() {
                   className="p-5 bg-white rounded-xl border-2 border-slate-200 shadow-card hover:border-[#1D63ED] transition-colors flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center justify-between text-xs font-mono mb-2">
-                      <span className="font-bold text-[#1D63ED] bg-blue-50 px-2 py-0.5 rounded border border-blue-200">{module.code}</span>
-                      <span className="text-slate-500 font-semibold">{module.businessProcess}</span>
-                    </div>
                     <h3 className="font-bold text-[#0A192F] text-base mb-1.5">{module.title}</h3>
                     <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">{module.shortDesc}</p>
                   </div>
