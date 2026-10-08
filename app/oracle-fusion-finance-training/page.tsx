@@ -32,7 +32,7 @@ export default function TrainingPage() {
               Oracle Fusion Financials Training Built Around Practical Understanding
             </h1>
             <p className="text-lg text-slate-700 leading-relaxed font-normal">
-              A complete professional program designed to transition graduates, accountants, and IT specialists into confident Oracle Fusion Cloud functional consultants.
+              Still Stuck in a Low-Paying Role? Upgrade with Oracle Fusion Financials Course!
             </p>
           </div>
 
