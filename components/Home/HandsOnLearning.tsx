@@ -71,20 +71,19 @@ export default function HandsOnLearning() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {capabilities.map((item) => (
+          {capabilities.map((item, idx) => (
             <div
-              key={item.label}
-              className="bg-[#112240]/90 border border-slate-700/80 rounded-xl p-6.5 hover:border-blue-400 transition-all hover:-translate-y-0.5 shadow-lg"
+              key={item.title}
+              className="bg-[#112240]/90 border border-slate-700/80 rounded-xl p-6.5 hover:border-blue-400 transition-all hover:-translate-y-0.5 shadow-lg flex flex-col justify-between"
             >
-              <div className="text-xs font-mono font-bold text-blue-400 mb-3 bg-blue-950/60 border border-blue-800/60 px-2 py-0.5 rounded w-fit">
-                {item.label}
+              <div>
+                <h3 className="text-base sm:text-lg font-bold text-white mb-2 tracking-tight">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
+                  {item.description}
+                </p>
               </div>
-              <h3 className="text-base sm:text-lg font-bold text-white mb-2 tracking-tight">
-                {item.title}
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                {item.description}
-              </p>
             </div>
           ))}
         </div>
