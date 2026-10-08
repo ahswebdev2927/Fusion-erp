@@ -24,10 +24,7 @@ export default function ModulesGrid() {
               className="bg-white p-7 sm:p-8 rounded-2xl border-2 border-slate-200/90 shadow-card hover:shadow-card-hover hover:border-[#1D63ED] transition-all flex flex-col justify-between group"
             >
               <div>
-                <div className="flex items-center justify-between text-xs font-mono mb-4">
-                  <span className="font-bold text-[#1D63ED] bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">
-                    {module.code}
-                  </span>
+                <div className="flex items-center justify-end text-xs font-mono mb-3">
                   <span className="text-slate-400 font-bold">0{idx + 1}</span>
                 </div>
 
@@ -40,10 +37,7 @@ export default function ModulesGrid() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="font-mono text-slate-500 font-semibold truncate max-w-[180px]">
-                  {module.businessProcess}
-                </span>
+              <div className="pt-4 border-t border-slate-100 flex items-center justify-end text-xs">
                 <Link
                   href={`/curriculum#${module.id}`}
                   className="font-bold text-[#1D63ED] inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
