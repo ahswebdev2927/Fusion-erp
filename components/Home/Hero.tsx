@@ -23,22 +23,29 @@ export default function Hero() {
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
+  const [lastSubmittedMessage, setLastSubmittedMessage] = useState("");
+
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = [
       `*New Consultation Request - FusionERPTraining*`,
       ``,
       `*Full Name:* ${formData.fullName}`,
-      `*Mobile Number:* ${formData.mobileNumber}`,
+      `*Phone/WhatsApp:* ${formData.mobileNumber}`,
       `*Email:* ${formData.email}`,
       `*Location:* ${formData.location}`,
     ].join("\n");
 
     const whatsappUrl = `https://wa.me/919247954331?text=${encodeURIComponent(message)}`;
+    setLastSubmittedMessage(whatsappUrl);
     setFormSubmitted(true);
 
     if (typeof window !== "undefined") {
-      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      // Direct navigation to WhatsApp with pre-filled message
+      const opened = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      if (!opened) {
+        window.location.href = whatsappUrl;
+      }
     }
   };
 
@@ -148,21 +155,34 @@ export default function Hero() {
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-black text-[#0A192F] tracking-tight">
-                    Consultation Request Confirmed
+                    Consultation Request Confirmed!
                   </h3>
                   <p className="text-sm text-slate-700 leading-relaxed max-w-sm mx-auto">
-                    Thank you! Your information has been routed directly to our senior functional admissions desk. We look forward to guiding your career roadmap.
+                    Your details have been pre-filled. If WhatsApp didn&apos;t open automatically, click below to send your consultation request directly:
                   </p>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setFormSubmitted(false);
-                      setFormData({ fullName: "", mobileNumber: "", email: "", location: "" });
-                    }}
-                    className="text-xs font-bold text-[#1D63ED] hover:underline pt-2 cursor-pointer"
-                  >
-                    Submit another consultation request
-                  </button>
+                  <div className="pt-2">
+                    <a
+                      href={lastSubmittedMessage || "https://wa.me/919247954331"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm shadow-md transition-all active:scale-95"
+                    >
+                      <span>Send via WhatsApp (+91 92479 54331)</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setFormSubmitted(false);
+                        setFormData({ fullName: "", mobileNumber: "", email: "", location: "" });
+                      }}
+                      className="text-xs font-bold text-slate-500 hover:text-[#1D63ED] hover:underline pt-2 cursor-pointer transition-colors"
+                    >
+                      ← Submit another consultation request
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <>
