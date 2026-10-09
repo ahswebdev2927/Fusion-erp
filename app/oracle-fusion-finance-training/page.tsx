@@ -32,7 +32,7 @@ export default function TrainingPage() {
             <h1 className="text-4xl sm:text-5xl font-black text-[#0A192F] tracking-tight leading-tight mb-6">
               Oracle Fusion Financials Training Built Around Practical Understanding
             </h1>
-            <p className="text-lg text-slate-900 leading-relaxed font-medium">
+            <p className="text-xl sm:text-2xl text-slate-900 leading-relaxed font-bold tracking-tight">
               Still Stuck in a Low-Paying Role? Upgrade with Oracle Fusion Financials Course!
             </p>
           </div>
