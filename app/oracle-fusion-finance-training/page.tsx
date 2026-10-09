@@ -32,7 +32,7 @@ export default function TrainingPage() {
             <h1 className="text-4xl sm:text-5xl font-black text-[#0A192F] tracking-tight leading-tight mb-6">
               Oracle Fusion Financials Training Built Around Practical Understanding
             </h1>
-            <p className="text-lg text-slate-700 leading-relaxed font-normal">
+            <p className="text-lg text-slate-900 leading-relaxed font-medium">
               Still Stuck in a Low-Paying Role? Upgrade with Oracle Fusion Financials Course!
             </p>
           </div>
@@ -66,14 +66,14 @@ export default function TrainingPage() {
             <h2 className="text-2xl sm:text-3xl font-black text-[#0A192F] mb-4 tracking-tight">
               Program Overview
             </h2>
-            <p className="text-base text-slate-700 leading-relaxed mb-8 font-normal">
+            <p className="text-base text-slate-900 leading-relaxed mb-8 font-normal">
               Oracle Fusion Cloud Financials is the leading cloud ERP choice for modern enterprise businesses. Our program covers both the macro business cycles (Procure-to-Pay, Order-to-Cash, Record-to-Report) and the granular subledger accounting rules required to implement and support global deployments.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-7 sm:p-8 rounded-2xl bg-white border-2 border-slate-300 shadow-card">
                 <h3 className="font-extrabold text-[#0A192F] text-lg mb-4">What you will master:</h3>
-                <ul className="space-y-3 text-sm text-slate-700 font-medium">
+                <ul className="space-y-3 text-sm text-slate-900 font-semibold">
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
                     <span>Enterprise multi-org hierarchies & ledgers</span>
@@ -95,7 +95,7 @@ export default function TrainingPage() {
 
               <div className="p-7 sm:p-8 rounded-2xl bg-white border-2 border-slate-300 shadow-card">
                 <h3 className="font-extrabold text-[#0A192F] text-lg mb-4">Learning Deliverables:</h3>
-                <ul className="space-y-3 text-sm text-slate-700 font-medium">
+                <ul className="space-y-3 text-sm text-slate-900 font-semibold">
                   <li className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#1D63ED] shrink-0" />
                     <span>Individual Oracle Cloud practice instance</span>
@@ -140,7 +140,7 @@ export default function TrainingPage() {
                 >
                   <div>
                     <h3 className="font-bold text-[#0A192F] text-base mb-1.5">{module.title}</h3>
-                    <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">{module.shortDesc}</p>
+                    <p className="text-xs text-slate-900 font-medium line-clamp-3 leading-relaxed">{module.shortDesc}</p>
                   </div>
                 </div>
               ))}
