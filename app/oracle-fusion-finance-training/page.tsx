@@ -25,9 +25,10 @@ export default function TrainingPage() {
         {/* Hero: 2-column layout with image on right side */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
           <div className="lg:col-span-7">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider text-[#1D63ED] bg-blue-50 border border-blue-200 mb-4 shadow-xs">
-              COMPREHENSIVE TRAINING PROGRAM
-            </span>
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-50 border-2 border-blue-400 text-xs sm:text-[13px] font-black tracking-wider text-blue-950 uppercase mb-6 shadow-sm">
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse shrink-0" />
+              <span className="font-black tracking-wide">COMPREHENSIVE TRAINING PROGRAM</span>
+            </div>
             <h1 className="text-4xl sm:text-5xl font-black text-[#0A192F] tracking-tight leading-tight mb-6">
               Oracle Fusion Financials Training Built Around Practical Understanding
             </h1>
