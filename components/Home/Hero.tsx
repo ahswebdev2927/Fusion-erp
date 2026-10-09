@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, ShieldCheck, Terminal, Compass, Layers, PlayCircle } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Terminal, Compass, Layers, PlayCircle, Sparkles } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
@@ -136,19 +136,22 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: 5 Cols - Lead Generation Consultation Form */}
+          {/* Right Column: 5 Cols - Bespoke Fusion ERP Admissions & Consultation Card */}
           <div className="lg:col-span-5 relative w-full">
-            <div className="bg-white rounded-3xl border-2 border-slate-200/90 shadow-2xl p-7 sm:p-9 relative z-10">
+            {/* Soft decorative glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/15 to-emerald-600/15 rounded-3xl blur-xl opacity-75 -z-10" />
+
+            <div className="bg-white rounded-3xl border-2 border-slate-300 shadow-elevation-2 p-7 sm:p-9 relative z-10">
               {formSubmitted ? (
                 <div className="text-center py-8 space-y-4">
                   <div className="w-16 h-16 rounded-full bg-emerald-50 text-[#059669] border border-emerald-200 flex items-center justify-center mx-auto shadow-sm">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-black text-[#0A192F] tracking-tight">
-                    Thank You!
+                    Consultation Request Confirmed
                   </h3>
                   <p className="text-sm text-slate-700 leading-relaxed max-w-sm mx-auto">
-                    Your request has been received. Our senior Oracle Cloud admissions counselor is connecting with you shortly.
+                    Thank you! Your information has been routed directly to our senior functional admissions desk. We look forward to guiding your career roadmap.
                   </p>
                   <button
                     type="button"
@@ -158,95 +161,101 @@ export default function Hero() {
                     }}
                     className="text-xs font-bold text-[#1D63ED] hover:underline pt-2 cursor-pointer"
                   >
-                    Submit another response
+                    Submit another consultation request
                   </button>
                 </div>
               ) : (
                 <>
-                  <div className="text-center mb-6">
-                    <h2 className="text-2xl sm:text-[28px] font-black text-[#1D63ED] tracking-tight leading-tight">
-                      Take The First Step<br />Towards Success
+                  <div className="mb-6">
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[11px] font-mono font-bold text-[#1D63ED] uppercase tracking-wider mb-2.5">
+                      <Sparkles className="w-3.5 h-3.5 text-[#1D63ED]" />
+                      FREE CAREER ROADMAP SESSION
+                    </div>
+                    <h2 className="text-2xl sm:text-[26px] font-black text-[#0A192F] tracking-tight leading-tight">
+                      Book a Free 1-on-1 Consultation
                     </h2>
+                    <p className="text-xs sm:text-sm text-slate-600 mt-1 font-normal">
+                      Speak directly with our senior Oracle Cloud consultant to assess your profile and batch schedule.
+                    </p>
                   </div>
 
                   <form onSubmit={handleFormSubmit} className="space-y-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                      {/* Full Name */}
-                      <div>
-                        <label className="block text-xs font-bold text-slate-800 mb-1.5">
-                          Full Name <span className="text-rose-500">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          required
-                          value={formData.fullName}
-                          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                          placeholder="Enter your full name"
-                          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white placeholder:text-slate-400 shadow-2xs"
-                        />
-                      </div>
+                    {/* Full Name */}
+                    <div>
+                      <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
+                        Full Name <span className="text-rose-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.fullName}
+                        onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                        placeholder="e.g. Rahul Sharma"
+                        className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/15 font-medium text-slate-900 bg-white placeholder:text-slate-400 transition-all"
+                      />
+                    </div>
 
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                       {/* Mobile Number */}
                       <div>
-                        <label className="block text-xs font-bold text-slate-800 mb-1.5">
-                          Mobile Number <span className="text-rose-500">*</span>
+                        <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
+                          Phone / WhatsApp <span className="text-rose-500">*</span>
                         </label>
                         <input
                           type="tel"
                           required
                           value={formData.mobileNumber}
                           onChange={(e) => setFormData({ ...formData, mobileNumber: e.target.value })}
-                          placeholder="Enter your mobile number"
-                          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white placeholder:text-slate-400 shadow-2xs"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                      {/* Email Address */}
-                      <div>
-                        <label className="block text-xs font-bold text-slate-800 mb-1.5">
-                          Email Address <span className="text-rose-500">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="Enter your email address"
-                          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white placeholder:text-slate-400 shadow-2xs"
+                          placeholder="+91 98765 43210"
+                          className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/15 font-medium text-slate-900 bg-white placeholder:text-slate-400 transition-all"
                         />
                       </div>
 
                       {/* Location */}
                       <div>
-                        <label className="block text-xs font-bold text-slate-800 mb-1.5">
-                          Location <span className="text-rose-500">*</span>
+                        <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
+                          City / Location <span className="text-rose-500">*</span>
                         </label>
                         <input
                           type="text"
                           required
                           value={formData.location}
                           onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                          placeholder="e.g Hyderabad"
-                          className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/20 font-medium text-slate-900 bg-white placeholder:text-slate-400 shadow-2xs"
+                          placeholder="e.g. Hyderabad"
+                          className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/15 font-medium text-slate-900 bg-white placeholder:text-slate-400 transition-all"
                         />
                       </div>
+                    </div>
+
+                    {/* Email Address */}
+                    <div>
+                      <label className="block text-xs font-bold text-slate-800 uppercase tracking-wider mb-1.5">
+                        Work or Personal Email <span className="text-rose-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="rahul.sharma@example.com"
+                        className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-[#1D63ED] focus:ring-2 focus:ring-[#1D63ED]/15 font-medium text-slate-900 bg-white placeholder:text-slate-400 transition-all"
+                      />
                     </div>
 
                     {/* Submit Button */}
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full py-3.5 px-6 rounded-xl font-bold text-white text-base shadow-md transition-all hover:opacity-95 hover:shadow-lg active:scale-[0.99] cursor-pointer bg-gradient-to-r from-[#DC2626] via-[#9333EA]/80 to-[#1D63ED]"
+                        className="w-full py-3.5 px-6 rounded-xl font-extrabold text-white text-sm sm:text-base shadow-sm transition-all hover:bg-[#1651C6] active:scale-[0.99] cursor-pointer bg-[#1D63ED] flex items-center justify-center gap-2 group"
                       >
-                        Submit
+                        <span>Reserve Free Consultation Call</span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </button>
                     </div>
 
-                    <div className="flex items-center justify-center gap-1.5 pt-1 text-[11px] text-slate-500 font-medium">
-                      <ShieldCheck className="w-3.5 h-3.5 text-[#059669]" />
-                      <span>100% Confidential. Instant counselor assistance.</span>
+                    <div className="flex items-center justify-center gap-2 pt-1 text-xs text-slate-500 font-medium">
+                      <ShieldCheck className="w-4 h-4 text-[#059669]" />
+                      <span>Direct 1-on-1 access. No sales spam.</span>
                     </div>
                   </form>
                 </>
