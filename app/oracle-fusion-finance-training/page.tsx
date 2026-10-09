@@ -66,7 +66,7 @@ export default function TrainingPage() {
             <h2 className="text-2xl sm:text-3xl font-black text-[#0A192F] mb-4 tracking-tight">
               Program Overview
             </h2>
-            <p className="text-base text-slate-900 leading-relaxed mb-8 font-normal">
+            <p className="text-base sm:text-[17px] text-slate-950 leading-relaxed mb-8 font-medium">
               Oracle Fusion Cloud Financials is the leading cloud ERP choice for modern enterprise businesses. Our program covers both the macro business cycles (Procure-to-Pay, Order-to-Cash, Record-to-Report) and the granular subledger accounting rules required to implement and support global deployments.
             </p>
 
