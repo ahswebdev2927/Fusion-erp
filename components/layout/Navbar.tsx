@@ -214,7 +214,7 @@ export default function Navbar() {
                           </span>
                         </div>
                         <p className="text-xs text-slate-500 group-hover:text-slate-700 transition-colors pl-6 font-medium">
-                          100% Job-Assured Functional Consultant Training
+                          100% Job-Assured master program
                         </p>
                       </Link>
                     </div>
@@ -354,7 +354,7 @@ export default function Navbar() {
                           </span>
                         </div>
                         <div className="text-[11px] text-slate-500 font-medium">
-                          100% Job-Assured Functional Consultant Training
+                          100% Job-Assured master program
                         </div>
                       </Link>
                     </div>
