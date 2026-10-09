@@ -53,7 +53,7 @@ export default function FAQPreview() {
                 </button>
 
                 {isOpen && (
-                  <div className="mt-4 pl-10 sm:pl-14 text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                  <div className="mt-4 pl-10 sm:pl-14 text-sm sm:text-base text-slate-900 leading-relaxed font-normal">
                     {item.answer}
                   </div>
                 )}

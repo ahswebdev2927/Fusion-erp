@@ -72,7 +72,7 @@ export default function Accordion({
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
                 >
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-[#64748B] text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-slate-900 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 font-normal">
                     {item.answer}
                   </div>
                 </motion.div>
