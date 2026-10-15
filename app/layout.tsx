@@ -1,11 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import WhatsAppFloatingButton from "@/components/ui/WhatsAppFloatingButton";
-import CallFloatingButton from "@/components/ui/CallFloatingButton";
 import { siteConfig } from "@/lib/site-config";
+import SiteShell from "@/components/layout/SiteShell";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -86,12 +83,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#0F172A] font-sans selection:bg-[#1769E0] selection:text-white">
-        <Navbar />
-        <main className="flex-1 w-full">{children}</main>
-        <Footer />
-        <CallFloatingButton />
-        <WhatsAppFloatingButton />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );
 }
+
