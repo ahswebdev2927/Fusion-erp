@@ -51,7 +51,7 @@ export default function CareerSupport() {
               <div className="space-y-3 mb-8 text-sm text-slate-200 font-medium">
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
-                  <span>Ethical career coaching (no fake placement promises)</span>
+                  <span>100% dedicated career assurance & interview mentorship</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />

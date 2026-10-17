@@ -26,9 +26,9 @@ export default function TermsPage() {
             FusionERPTraining.com is an independent professional educational provider. <strong>Oracle, Oracle Cloud, Oracle Fusion, and Oracle E-Business Suite</strong> are registered trademarks of Oracle Corporation. FusionERPTraining.com is not affiliated with, sponsored by, or endorsed by Oracle Corporation unless expressly stated.
           </p>
 
-          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">2. Ethical Career & Placement Disclaimer</h2>
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">2. Career Readiness & Placement Assurance</h2>
           <p>
-            We prepare learners with authentic enterprise knowledge, business workflows, project portfolio guidance, and rigorous mock interview rounds. We do NOT offer or promise guaranteed job placements, guaranteed salaries, or proxy interview services. Learner employment outcomes depend on individual dedication, market conditions, and interview performance.
+            We provide 100% dedicated career assurance and interview preparation support. We empower learners with authentic enterprise expertise, real-world business workflows, resume and portfolio optimization, and structured mock interview sessions to build interview confidence and maximize career opportunities. Individual career milestones and outcomes are driven by learner engagement, industry requirements, and personal interview performance.
           </p>
 
           <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">3. Intellectual Property & Training Materials</h2>

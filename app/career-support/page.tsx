@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import {
   CheckCircle2,
   ArrowRight,
-  ShieldAlert,
+  ShieldCheck,
 } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -66,11 +66,11 @@ export default function CareerSupportPage() {
               Acquiring technical knowledge is only half the battle. Our career mentorship equips you with the articulation, project portfolio, and interview stamina needed to stand out in competitive consulting hiring cycles.
             </p>
 
-            {/* High-visibility Ethics callout */}
-            <div className="bg-amber-50/90 border-2 border-amber-300 rounded-2xl p-5 flex items-start gap-4 shadow-sm">
-              <ShieldAlert className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
-              <div className="text-xs sm:text-sm text-amber-950 leading-relaxed">
-                <strong className="font-extrabold text-amber-900">Our Ethical Career Policy:</strong> We do not make fraudulent 100% job guarantee claims or fabricate fake resumes. We provide genuine skills, authentic project simulation, and rigorous interview coaching that empowers you to succeed on your own merit.
+            {/* High-visibility Career Assurance callout */}
+            <div className="bg-emerald-50/90 border-2 border-emerald-300 rounded-2xl p-5 flex items-start gap-4 shadow-sm">
+              <ShieldCheck className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
+              <div className="text-xs sm:text-sm text-emerald-950 leading-relaxed">
+                <strong className="font-extrabold text-emerald-900">100% Career Readiness Assurance:</strong> We provide comprehensive end-to-end career guidance, verified project portfolios, and rigorous mock interview rounds to ensure complete confidence and real-world competence.
               </div>
             </div>
           </div>
