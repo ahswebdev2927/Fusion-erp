@@ -111,13 +111,13 @@ export default function LandingPage() {
             <div className="landing-intro">
               <span className="landing-badge">
                 <span className="landing-dot"></span>
-                100% Job-Assured • Live Projects &amp; Expert Guidance
+                100% Job Guarantee • Live Projects &amp; Expert Guidance
               </span>
               <h1>
                 Oracle Fusion Financials Training <span>in Hyderabad</span>
               </h1>
               <p className="landing-lead">
-                <b>100% Job-Assured Oracle Fusion Financials Course</b> with real projects and
+                <b>100% Job Guarantee Oracle Fusion Financials Course</b> with real projects and
                 expert guidance. Master key financial modules, gain real-time hands-on experience
                 in live Oracle Cloud labs, and launch your ERP career.
               </p>
@@ -254,7 +254,7 @@ export default function LandingPage() {
           <div className="landing-container">
             <div className="landing-head">
               <div>
-                <span className="landing-tag">● 7-Month Job-Assured Program</span>
+                <span className="landing-tag">● 7-Month Job Guarantee Program</span>
                 <h2>
                   A clear path from training <span>to career readiness.</span>
                 </h2>
@@ -513,7 +513,7 @@ export default function LandingPage() {
               </span>
               <p className="about">
                 FusionERPTraining.com is a professional training provider for Oracle Fusion Cloud
-                Financials, offering a 100% Job-Assured program with live cloud labs, real business
+                Financials, offering a 100% Job Guarantee program with live cloud labs, real business
                 scenarios and 1-on-1 interview coaching.
               </p>
               <div className="landing-soc">
@@ -576,13 +576,16 @@ export default function LandingPage() {
                   </a>
                 </li>
                 <li>
+                  <Link href="/terms">Terms &amp; Conditions</Link>
+                </li>
+                <li>
                   <Link href="/privacy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
           </div>
           <p className="landing-disc">
-            Job-assurance is provided as per program terms explained during your consultation.
+            Job guarantee is provided as per program terms explained during your consultation.
             Oracle, Oracle Fusion and Oracle Cloud are registered trademarks of Oracle
             Corporation. FusionERPTraining.com is an independent training provider and is not
             affiliated with Oracle Corporation.
@@ -590,6 +593,7 @@ export default function LandingPage() {
           <div className="landing-legal">
             <span>© {new Date().getFullYear()} FusionERPTraining.com. All rights reserved.</span>
             <span>
+              <Link href="/terms">Terms &amp; Conditions</Link> •{" "}
               <Link href="/privacy">Privacy Policy</Link>
             </span>
           </div>

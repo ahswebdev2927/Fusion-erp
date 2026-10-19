@@ -74,7 +74,7 @@ export default function AboutPage() {
               Our mission is to provide transparent, practical, and deeply supportive Oracle Cloud education that equips graduates, accountants, and career switchers with genuine functional consulting competence.
             </p>
             <p className="text-slate-700 leading-relaxed font-normal">
-              We deliberately reject false promises, fake placement guarantees, and high-pressure sales calls. Instead, we invest in small cohorts, hands-on cloud labs, and honest 1-on-1 mentorship.
+              Instead, we invest in small cohorts, hands-on cloud labs, and honest 1-on-1 mentorship.
             </p>
           </Card>
         </div>

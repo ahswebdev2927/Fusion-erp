@@ -42,17 +42,49 @@ export default function PrivacyPage() {
             <li>Comply with necessary accounting, billing, and legal requirements.</li>
           </ul>
 
-          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">3. We Never Sell Your Data</h2>
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">3. Cookies, Analytics and Advertising</h2>
+          <p>
+            This website uses Google Tag Manager, Google Analytics 4, and Google Ads conversion tracking. These services may use cookies to understand how visitors interact with the site and to measure the effectiveness of our advertising campaigns. Google&apos;s use of this data is governed by the{" "}
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline font-medium"
+            >
+              Google Privacy Policy
+            </a>
+            ; see also{" "}
+            <a
+              href="https://policies.google.com/technologies/partner-sites"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline font-medium"
+            >
+              how Google uses information from sites that use its services
+            </a>
+            . You can manage ad personalization at{" "}
+            <a
+              href="https://adssettings.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline font-medium"
+            >
+              adssettings.google.com
+            </a>{" "}
+            and block or delete cookies anytime through your web browser settings.
+          </p>
+
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">4. We Never Sell Your Data</h2>
           <p>
             FusionERPTraining.com has a zero-tolerance spam policy. We never sell, rent, trade, or distribute your email address, phone number, or personal details to third-party marketing lists, lead aggregators, or unauthorized recruitment agencies.
           </p>
 
-          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">4. Security</h2>
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">5. Security</h2>
           <p>
             We employ industry-standard encryption, firewalls, and access protocols to protect your personal information against unauthorized disclosure or loss.
           </p>
 
-          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">5. Contact Us</h2>
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">6. Contact Us</h2>
           <p>
             If you have questions or wish to request data deletion, contact us at: <strong>fusionerptraining@gmail.com</strong>.
           </p>

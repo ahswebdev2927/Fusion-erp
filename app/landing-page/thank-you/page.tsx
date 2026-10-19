@@ -110,7 +110,7 @@ export default function ThankYouPage() {
               </span>
               <p className="about">
                 FusionERPTraining.com is a professional training provider for Oracle Fusion Cloud
-                Financials, offering a 100% Job-Assured program with live cloud labs, real business
+                Financials, offering a 100% Job Guarantee program with live cloud labs, real business
                 scenarios and 1-on-1 interview coaching.
               </p>
             </div>
@@ -149,6 +149,9 @@ export default function ThankYouPage() {
                   </a>
                 </li>
                 <li>
+                  <Link href="/terms">Terms &amp; Conditions</Link>
+                </li>
+                <li>
                   <Link href="/privacy">Privacy Policy</Link>
                 </li>
               </ul>
@@ -157,6 +160,7 @@ export default function ThankYouPage() {
           <div className="landing-legal">
             <span>© {new Date().getFullYear()} FusionERPTraining.com. All rights reserved.</span>
             <span>
+              <Link href="/terms">Terms &amp; Conditions</Link> •{" "}
               <Link href="/privacy">Privacy Policy</Link>
             </span>
           </div>

@@ -10,9 +10,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Oracle Fusion Financials Training in Hyderabad | 100% Job-Assured | FusionERPTraining.com",
+  title: {
+    absolute: "Oracle Fusion Financials Training in Hyderabad | 100% Job Guarantee | FusionERPTraining.com",
+  },
   description:
-    "Oracle Fusion Financials training in Hyderabad. 100% Job-Assured program with live Oracle Cloud labs, P2P, O2C & R2R business cycles, 15+ years expert mentors, ATS resume and 1-on-1 mock interviews. Book a free career consultation.",
+    "Oracle Fusion Financials training in Hyderabad. 100% Job Guarantee program with live Oracle Cloud labs, P2P, O2C & R2R business cycles, 15+ years expert mentors, ATS resume and 1-on-1 mock interviews. Book a free career consultation.",
   keywords: [
     "Oracle Fusion Financials Training in Hyderabad",
     "Oracle Fusion Finance Training",
@@ -25,9 +27,9 @@ export const metadata: Metadata = {
     "Record to Report R2R",
   ],
   openGraph: {
-    title: "Oracle Fusion Financials Training in Hyderabad | FusionERPTraining.com",
+    title: "Oracle Fusion Financials Training in Hyderabad | 100% Job Guarantee | FusionERPTraining.com",
     description:
-      "100% Job-Assured Oracle Fusion Financials course with live cloud labs and expert guidance. Book a free 1-on-1 consultation.",
+      "100% Job Guarantee Oracle Fusion Financials course with live cloud labs and expert guidance. Book a free 1-on-1 consultation.",
     url: "https://fusionerptraining.com/landing-page",
     siteName: "FusionERPTraining.com",
     type: "website",

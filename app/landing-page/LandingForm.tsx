@@ -247,7 +247,8 @@ export default function LandingForm() {
         <p className="landing-safe">🛡 Direct 1-on-1 access. No sales spam.</p>
         <p className="landing-consent">
           By submitting, you agree to be contacted via call, WhatsApp, SMS or email about this program.{" "}
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a> •{" "}
+          <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </p>
       </form>
     </div>

@@ -26,9 +26,16 @@ export default function TermsPage() {
             FusionERPTraining.com is an independent professional educational provider. <strong>Oracle, Oracle Cloud, Oracle Fusion, and Oracle E-Business Suite</strong> are registered trademarks of Oracle Corporation. FusionERPTraining.com is not affiliated with, sponsored by, or endorsed by Oracle Corporation unless expressly stated.
           </p>
 
-          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">2. Career Readiness & Placement Assurance</h2>
+          <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">2. 100% Job Guarantee Program</h2>
           <p>
-            We provide 100% dedicated career assurance and interview preparation support. We empower learners with authentic enterprise expertise, real-world business workflows, resume and portfolio optimization, and structured mock interview sessions to build interview confidence and maximize career opportunities. Individual career milestones and outcomes are driven by learner engagement, industry requirements, and personal interview performance.
+            We offer a 100% Job Guarantee Program for Oracle Fusion Cloud Financials. The program runs for 7 months:
+          </p>
+          <ul className="list-disc pl-5 space-y-1 my-2">
+            <li><strong>Months 1–3:</strong> Live online Oracle Fusion Financials training with hands-on cloud labs.</li>
+            <li><strong>Months 4–7:</strong> Interview scheduling, mock interviews, resume and portfolio preparation, and step-by-step career guidance.</li>
+          </ul>
+          <p>
+            The job guarantee applies to learners who are enrolled in the 100% Job Guarantee Program and who complete the program in line with the participation requirements set out in their written enrolment agreement. The complete eligibility conditions, scope and timelines of the guarantee are explained during the free consultation and confirmed in writing at the time of enrolment, before any payment is made.
           </p>
 
           <h2 className="text-lg font-bold text-[#0B1F3A] pt-4">3. Intellectual Property & Training Materials</h2>
